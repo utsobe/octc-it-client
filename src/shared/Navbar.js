@@ -1,13 +1,14 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import logo from '../assets/logos/octcit-logo.png';
+import CustomLink from '../components/CustomLink';
 
 const Navbar = ({ children }) => {
     const menuItems = <>
-        <li><Link className='mr-8 text-sm font-medium' to='/'>Home</Link></li>
-        <li><Link className='mr-8 text-sm font-medium' to='/courses'>Courses</Link></li>
-        <li><Link className='mr-8 text-sm font-medium' to='/about'>About</Link></li>
-        <li><Link className='mr-8 text-sm font-medium' to='/contact'>Contact</Link></li>
+        <li><CustomLink className='mr-8 text-sm font-medium' to='/'>Home</CustomLink></li>
+        <li><CustomLink className='mr-8 text-sm font-medium' to='/courses'>Courses</CustomLink></li>
+        <li><CustomLink className='mr-8 text-sm font-medium' to='/about'>About</CustomLink></li>
+        <li><CustomLink className='mr-8 text-sm font-medium' to='/contact'>Contact</CustomLink></li>
         {/* <li>
             <div class="dropdown dropdown-end">
                 <label tabindex="0" class="btn btn-ghost btn-circle avatar">
