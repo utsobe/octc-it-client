@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import logo from '../assets/logos/octcit-logo.png';
 import CustomLink from '../components/CustomLink';
+import { FaSignOutAlt, FaRegMoon } from "react-icons/fa";
 
 const Navbar = ({ children }) => {
     const menuItems = <>
@@ -28,14 +29,18 @@ const Navbar = ({ children }) => {
                             <p className='text-md font-semibold'>Anisul Islam Khan</p>
                             <p className='text-[11px]'>Student ID: OCTCG-0075</p>
                         </div>
+                        <div className='flex justify-evenly pt-2 pb-1'>
+                            <button className='text-sm py-2.5 px-5 bg-primary rounded-full text-white'>My Course</button>
+                            <button className='text-sm py-2.5 px-5 bg-primary rounded-full text-white'>View Profile</button>
+                        </div>
                     </div>
                     <hr />
                     <div className='p-4 text-sm'>
-                        <li>
-                            <a class="justify-between">Profile</a>
+                        <li className='mb-2 cursor-pointer'>
+                            <a className='flex items-center'><FaRegMoon className='mr-1.5' />Darkmode</a>
                         </li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
+                        {/* <li><a>Account</a></li> */}
+                        <li><a className='flex items-center'><FaSignOutAlt className='mr-1.5' />Logout</a></li>
                     </div>
                 </div>
             </div>
