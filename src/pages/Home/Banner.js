@@ -37,8 +37,6 @@ const bnrData = [
     },
 ];
 
-console.log(bnrData.length);
-
 
 const Banner = () => {
     return (
