@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../shared/Footer';
 import Banner from './Banner';
 import CoursesSection from './CoursesSection';
 
@@ -7,6 +8,7 @@ const Home = () => {
         <>
             <Banner />
             <CoursesSection />
+            <Footer />
         </>
     );
 };
