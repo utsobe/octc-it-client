@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div className='mt-32 bg-primary text-base-100'>
-            <div className='max-w-7xl mx-auto px-4 lg:px-12 py-10 grid grid-cols-1 lg:grid-cols-3 gap-0 gap-y-12'>
+            <div className='max-w-7xl mx-auto sm:px-6 lg:px-12 py-10 grid grid-cols-1 lg:grid-cols-3 gap-0 gap-y-12'>
                 <div>
                     <div class="flex items-center">
                         <img src={Logo} className='h-12' alt="" />

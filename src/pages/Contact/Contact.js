@@ -1,12 +1,12 @@
 import React from 'react';
 import UnderConstruction from '../../assets/under-construction.jpg';
 
-const About = () => {
+const Contact = () => {
     return (
         <div>
             <img src={UnderConstruction} className='mx-auto' alt="" />
-        </div>
+        </div >
     );
 };
 
-export default About;
+export default Contact;

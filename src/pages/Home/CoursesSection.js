@@ -33,7 +33,7 @@ const CoursesSection = () => {
                 <h1 className='text-4xl font-semibold mb-3'>Popular Courses</h1>
                 <p className='px-3 lg:px-72'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A nesciunt provident magnam distinctio similique modi amet consectetur adipisicing elit. A nesciunt provident</p>
             </div>
-            <div className='grid grid-cols-3 gap-10 mt-12'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-10 mt-12'>
                 {
                     courses.map(data =>
                         <div className='border rounded-md'>
